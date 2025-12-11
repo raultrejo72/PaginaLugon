@@ -246,13 +246,24 @@ body {
 /* HERO SECTION */
 /*------------------------------------*/
 
+
+
 .hero-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;              /* igual que los otros heroes */
+
+  width: 100%;
+    height: 500px; /* ajusta a tu gusto */
     background-size: cover;
     background-position: center;
-    display: flex;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+
+
+    /* position: relative;
+    width: 100%;
+    height: 100vh;              
+    background-size: cover;
+    background-position: center;
+    display: flex; */
 }
 
 .hero-section .container {
@@ -274,8 +285,62 @@ body {
     color: #ffffff;              /* Por si lo quieres más blanco */
 }
 
+.carousel-item .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
+.carousel-item .col-md-3 p {
+    flex-grow: 1;
+}
 
+/* Separar flechas del carrusel Productos y Servicios */
+#productosCarousel .carousel-control-prev {
+    left: -150px;        /* mueve la flecha más hacia afuera */
+}
+
+#productosCarousel .carousel-control-next {
+    right: -150px;       /* mueve la flecha más hacia afuera */
+}
+
+/* Flecha izquierda personalizada */
+#productosCarousel .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFCC00'%3e%3cpath stroke='%23FFCC00' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' d='M11 1 L5 8 L11 15'/%3e%3c/svg%3e");
+    width: 40px;     /* más grande */
+    height: 40px;
+}
+
+/* Flecha derecha personalizada */
+#productosCarousel .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFCC00'%3e%3cpath stroke='%23FFCC00' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' d='M5 1 L11 8 L5 15'/%3e%3c/svg%3e");
+    width: 40px;
+    height: 40px;
+}
+
+/* Fijar altura a las tarjetas del carrusel Productos y Servicios */
+#productosCarousel .carousel-item .col-md-3 {
+    display: flex;
+    flex-direction: column;
+    height: 550px; /* Ajusta este valor según tu diseño */
+}
+
+/* Mantener imágenes a tamaño natural */
+#productosCarousel .carousel-item img {
+    width: 100%;
+    height: auto; /* 🔥 No obliga a recortar ni achicar */
+}
+
+/* Título */
+#productosCarousel .carousel-item h5 {
+    min-height: 40px; /* Asegura espacio para el título */
+}
+
+/* Descripción */
+#productosCarousel .carousel-item p {
+    flex-grow: 1; /* Rellena el espacio sobrante */
+    overflow: hidden;
+}
 
 
 
@@ -702,7 +767,7 @@ body {
 /*------------------------------------*/
 /* CAROUSEL SECTION */
 /*------------------------------------*/
-.carousel .anterior{
+/* .carousel .anterior{
   width: 50px;
   height: 50px;
   background-color: #00c300;
@@ -720,7 +785,7 @@ body {
   right: 8%;
   top: 50%;
   opacity: 1;
-}
+} */
 
 /*------------------------------------*/
 /* MAIN MENU NAVEGATION */
@@ -2090,7 +2155,7 @@ to {
   .hero-section{
     /* display: none; */
 
-     width: 100%;                     /* ocupa todo el ancho de la página */
+  width: 100%;                     /* ocupa todo el ancho de la página */
   height: 60vh;                    /* 🔹 altura: 60% del alto de la pantalla (ajústalo) */
   background-image: url('images/index/EquiposVariosFondo.jpg');
   background-size: cover;          /* la imagen se adapta al contenedor */
@@ -2207,7 +2272,7 @@ to {
     left: -20px;
   }
 
-  .carousel .siguiente{
+  /* .carousel .siguiente{
     width: 35px;
     height: 35px;
     right: -35px;
@@ -2215,7 +2280,7 @@ to {
 
   .carousel-item img{
     width: 100% !important;
-  }
+  } */
 
   /* BLOGS */
   .blog h3{

@@ -2,6 +2,11 @@
 <html lang="es">
 
 <head>
+     <meta charset="UTF-8">
+
+    <!-- 🔥 Agrega esta línea aquí -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <!-- Google Tag Manager -->
     <script>(function (w, d, s, l, i) {
             w[l] = w[l] || []; w[l].push({
@@ -41,7 +46,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <!-- Boostrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <!-- IMPORTS DE ANALYTICS -->
     <!-- Meta Pixel Code -->
@@ -211,7 +217,21 @@
 
 
     <!-- Hero Section -->
-    <div class="hero-section" style="background-image:url('images/index/imagenFondoIndex.png');">
+    <!-- <div class="hero-section" style="background-image:url('images/index/imagenFondoIndex.png');">
+        <div class="container d-flex align-items-center justify-content-end text-white flex-column">
+
+            <h1 class="hero-title">Renta y venta</h1>
+
+            <a href="..." class="contact-button agrandar" target="_blank">
+                Cotiza Aquí
+            </a>
+
+        </div>
+    </div> -->
+
+
+    <!-- Hero Section -->
+    <div class="hero-section" id="heroCarousel">
         <div class="container d-flex align-items-center justify-content-end text-white flex-column">
 
             <h1 class="hero-title">Renta y venta</h1>
@@ -242,12 +262,166 @@
     <!-- End Hero Section -->
 
     <!-- Products And Services Section -->
+
+
+
+    <!-- Products And Services Section -->
     <div class="container my-5 contenedor_productos-servicios">
         <h1 class="text-center fw-bold">Productos y Servicios</h1>
         <hr class="mx-auto" style="width: 200px; height: 3px; background-color: #00c300; opacity: 1;">
 
+        <!-- Carousel -->
+        <div id="productosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+
+            <div class="carousel-inner">
+
+                <!-- SLIDE 1 -->
+                <div class="carousel-item active">
+                    <div class="row mt-4 gy-4">
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/imagenCompactacion.png" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">COMPACTACIÓN</h5>
+                            <p>La compactación de terrenos es un proceso mecánico mediante el cual las partículas del suelo son
+                    obligadas a estar más en contacto las unas con las otras, de manera que se reduzcan los vacíos
+                    entre ellas, lo cuál se traduce en un mejoramiento de sus propiedades para poder trabajar sobre
+                    ellas.</p>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/ImagenGruas.jpg" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">Grúas y Servicios</h5>
+                            <p>Si busca grúas y montacargas, en Lugon somos una empresa innovadora en el ramo de construcción en la
+                    ciudad de Saltillo, Coahuila. Contamos con 20 años de experiencia. Nuestro objetivo es satisfacer
+                    las
+                    necesidades para cada uno de nuestros clientes. Tenemos como pilar el servicio de excelencia y el
+                    trato humano por convicción, transformados en confianza y garantía.</p>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/ImagenConcreto.jpg" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">Concreto</h5>
+                            <p>La principal característica estructural del hormigón es que resiste muy bien los esfuerzos de
+                    compresión,
+                    pero no tiene buen comportamiento frente a otros tipos de esfuerzos (tracción, flexión, cortante,
+                    etc.),
+                    por este motivo es habitual usarlo asociado a ciertas armaduras de acero, recibiendo en este caso la
+                    denominación de hormigón armado, o concreto pre-reforzado en algunos lugares; comportándose el
+                    conjunto
+                    muy favorablemente ante las diversas solicitaciones.</p>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/ImagenDemolicion.jpg" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">Demolición</h5>
+                            <p>Cuando nos decidimos derribar algún tipo de edificación por el motivo que sea, debemos de tener en
+                    cuenta
+                    una serie de criterios a seguir a la hora de elegir el tipo de maquinaria especializada en derribos
+                    y
+                    demoliciones que vayamos a utilizar, ya que según el tipo de derribo escogeremos un tipo de
+                    maquinaria u otra.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div class="carousel-item">
+                    <div class="row mt-4 gy-4">
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/imagenBombeoLimpieza.jpg" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">Bombeo y Limpieza</h5>
+                            <p>Los equipos sumergibles con los que contamos se utilizan para el bombeo de agua potable y no potable.
+                    Estas unidades utilizan la fuerza centrífuga para impulsar el agua de una fuente de agua, un pozo,
+                    arroyo, lago, tanque de almacenamiento, etc.</p>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/ImagenGeneradores.jpg" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">Generadores</h5>
+                            <p>Un generador ó planta de luz es una máquina eléctrica rotativa que transforma energía mecánica en
+                    energía eléctrica.</p>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/ImagenSoldadoras.jpg" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">Soldadoras</h5>
+                            <p>La soldadora es un accesorio indispensable para muchos sectores laborales, como es el caso de los
+                    talleres electrónicos
+                    y de los talleres mecánicos, lugares donde continuamente se deben unir dos piezas metálicas a partir
+                    del fundido de otro
+                    material, que va a facilitar la juntura de las mismas.</p>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/imagenElevacion.jpg" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">Elevación</h5>
+                            <p>En las diversas actividades industriales de construcción y servicios se plantean innumerables
+                    necesidades en la elevación y
+                    transporte de cargas, que deben ser solucionadas con los equipos más apropiados en cada caso.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3 -->
+                <div class="carousel-item">
+                    <div class="row mt-4 gy-4">
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/imagenHabilitadoAcero.jpg" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">Habilitado de Acero</h5>
+                            <p>Descripción pendiente...</p>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/imagenRemolques.jpg" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">Remolques</h5>
+                            <p>El remolque, también conocido como acoplado o tráiler es un vehículo de carga no motorizado que
+                    consta como mínimo de chasis,
+                    ruedas, superficie de carga y, dependiendo de su peso y dimensiones, frenos propios.</p>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/ImagenEquipoMueveTierra.jpg" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">Equipo Mueve Tierra</h5>
+                            <p>Descripción pendiente...</p>
+                        </div>
+
+                        <div class="col-md-3 text-center">
+                            <img src="images/index/imagenCamionetas.jpg" class="img-fluid rounded">
+                            <h5 class="mt-3 fw-bold">Camionetas</h5>
+                            <p>Para todo tipo de transportación, el alquiler del equipo adecuado puede a veces ser confuso. Sin
+                    lugar a dudas, lo mejor es
+                    tener de dónde escoger y para la Renta de Camionetas en Saltillo no hay mejor lugar que Lugon Truck
+                    Rentals.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#productosCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#productosCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- <div class="container my-5 contenedor_productos-servicios">
+        <h1 class="text-center fw-bold">Productos y Servicios</h1>
+        <hr class="mx-auto" style="width: 200px; height: 3px; background-color: #00c300; opacity: 1;">
+
         <div class="row mt-4 gy-4">
-            <!-- Producto 1 -->
+
             <div class="col-md-3 text-center">
                 <img src="images/index/imagenCompactacion.png" class="img-fluid rounded" alt="Baños Portátiles">
                 <h5 class="mt-3 fw-bold">COMPACTACIÓN</h5>
@@ -257,7 +431,7 @@
                     ellas.</p>
             </div>
 
-            <!-- Producto 2 -->
+
             <div class="col-md-3 text-center">
                 <img src="images/index/ImagenGruas.jpg" class="img-fluid rounded" alt="Oficinas Móviles">
                 <h5 class="mt-3 fw-bold">Grúas y Servicios</h5>
@@ -268,7 +442,7 @@
                     trato humano por convicción, transformados en confianza y garantía..</p>
             </div>
 
-            <!-- Producto 3 -->
+
             <div class="col-md-3 text-center">
                 <img src="images/index/ImagenConcreto.jpg" class="img-fluid rounded" alt="Contenedores">
                 <h5 class="mt-3 fw-bold">Concreto</h5>
@@ -282,7 +456,7 @@
                     muy favorablemente ante las diversas solicitaciones.</p>
             </div>
 
-            <!-- Producto 4 -->
+
             <div class="col-md-3 text-center">
                 <img src="images/index/ImagenDemolicion.jpg" class="img-fluid rounded" alt="Fosa Séptica Portátil">
                 <h5 class="mt-3 fw-bold">Demolición</h5>
@@ -294,7 +468,7 @@
                     maquinaria u otra.</p>
             </div>
 
-            <!-- Producto 5 -->
+
             <div class="col-md-3 text-center">
                 <img src="images/index/imagenBombeoLimpieza.jpg" class="img-fluid rounded"
                     alt="Baños Portátiles de Lujo">
@@ -305,7 +479,7 @@
                     lago, tanque de almacenamiento, etc. </p>
             </div>
 
-            <!-- Producto 6 -->
+            <!-- 
             <div class="col-md-3 text-center">
                 <a href="banos-evento.html">
                     <img src="images/index/ImagenGeneradores.jpg" class="img-fluid rounded"
@@ -316,7 +490,7 @@
                     energía eléctrica. </p>
             </div>
 
-            <!-- Producto 7 -->
+            <!-- 
             <div class="col-md-3 text-center">
                 <img src="images/index/ImagenSoldadoras.jpg" class="img-fluid rounded" alt="Destape y Mantenimiento">
                 <h5 class="mt-3 fw-bold">Soldadoras</h5>
@@ -327,7 +501,7 @@
                     material, que va a facilitar la juntura de las mismas.</p>
             </div>
 
-            <!-- Producto 8 -->
+            <!-- 
             <div class="col-md-3 text-center">
                 <img src="images/index/imagenElevacion.jpg" class="img-fluid rounded" alt="Desagüe de Fosas Sépticas">
                 <h5 class="mt-3 fw-bold">Elevación</h5>
@@ -335,7 +509,7 @@
                     necesidades en la elevación y
                     transporte de cargas, que deben ser solucionadas con los equipos más apropiados en cada caso.</p>
             </div>
-            <!-- Producto 8 -->
+            <!-- 
             <div class="col-md-3 text-center">
                 <img src="images/index/imagenHabilitadoAcero.jpg" class="img-fluid rounded"
                     alt="Desagüe de Fosas Sépticas">
@@ -343,7 +517,7 @@
                 <p>Bdjkhdsahdsd sjkd d dd hdjkdhd gdjh gs jdjshgdhs gd gdjsgdgdh gdh jghjsgdk gdhjgkghgdsgdjgdaskd dhgs
                 </p>
             </div>
-            <!-- Producto 8 -->
+            <!-- 
             <div class="col-md-3 text-center">
                 <img src="images/index/imagenRemolques.jpg" class="img-fluid rounded" alt="Desagüe de Fosas Sépticas">
                 <h5 class="mt-3 fw-bold">Remolques</h5>
@@ -351,14 +525,14 @@
                     consta como mínimo de chasis,
                     ruedas, superficie de carga y, dependiendo de su peso y dimensiones, frenos propios.</p>
             </div>
-            <!-- Producto 8 -->
+            <!-- 
             <div class="col-md-3 text-center">
                 <img src="images/index/ImagenEquipoMueveTierra.jpg" class="img-fluid rounded"
                     alt="Desagüe de Fosas Sépticas">
                 <h5 class="mt-3 fw-bold">Equipo Mueve Tierra</h5>
                 <p>asdsads asbhdk sadbd dbkjdbasbda sgdhdbsl hdlkdjhgddgdkgdhagsdhgdjgdhjsgdjas.</p>
             </div>
-            <!-- Producto 8 -->
+            <!-- 
             <div class="col-md-3 text-center">
                 <img src="images/index/imagenCamionetas.jpg" class="img-fluid rounded" alt="Desagüe de Fosas Sépticas">
                 <h5 class="mt-3 fw-bold">Camionetas</h5>
@@ -368,7 +542,21 @@
                     Rentals.</p>
             </div>
         </div>
-    </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- End Products And Services Section -->
 
     <!-- Section Banner Renta & Venta de Casetas Móviles -->
@@ -423,7 +611,8 @@
     <!-- End Section Number Counter -->
 
     <!-- Our Clients Section -->
-    <h1 class="center mt-5" style="color:rgb(44, 150, 23); font-weight: 600;">Empresas líderes que confían en nuestra experiencia</h1>
+    <h1 class="center mt-5" style="color:rgb(44, 150, 23); font-weight: 600;">Empresas líderes que confían en nuestra
+        experiencia</h1>
     <!-- <h4 class="center mb-5 px-5 tamaño">Estas son algúnas de las empresas a las que les prestamos nuestros servicios
     </h4> -->
 
@@ -620,6 +809,36 @@
     <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+    <script>
+        const heroImages = [
+            "images/index/EquiposVariosFondo.jpg",
+            "images/index/imagenCamionetas.jpg",
+            "images/index/imagenElevacion.jpg"
+        ];
+
+        let current = 0;
+        const heroSection = document.getElementById("heroCarousel");
+
+        function changeHeroImage() {
+            heroSection.style.backgroundImage = `url('${heroImages[current]}')`;
+            current = (current + 1) % heroImages.length;
+        }
+
+        // Mostrar la primera imagen inmediatamente
+        changeHeroImage();
+
+        // Cambiar cada 4 segundos
+        setInterval(changeHeroImage, 4000);
+    </script>
+
+    
+    
+
+
 </body>
 
 </html>
